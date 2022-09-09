@@ -35,6 +35,14 @@ class NotificationManagerOld(Text):
         pass  # sms for Old
 
 
+class NotificationElmer(Viber):
+    def viber(self, group_name):
+        pass
+
+
+elmer = NotificationElmer()
+elmer.viber()
+
 GROUP_NAME_TO_NOTIFY = 'PI-SUPPORT'
 
 old = NotificationManagerOld()

@@ -47,6 +47,9 @@ if __name__ == '__main__':
     manager = NotificationManager(s)
     manager.send('Hello!')
 
+    manager = NotificationManager(e)
+    manager.send("Hi!")
+
     # the child class Phone and Email
     #   can assume the place of Notification abstract class
     #   by making use of NotificationManager

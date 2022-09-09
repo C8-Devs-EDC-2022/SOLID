@@ -54,21 +54,24 @@ class NotificationControlA(NotificationControl):
 
 
 edc = NotificationControlEDC()
+edc.turn_on()
+edc.turn_off()
+
 setting = NotificationSetting(edc)
 setting.set()   # ON
 setting.set()   # OFF
 
 
-a = NotificationControlA()
-a.turn_on()         # Turn on button
-a.turn_off()        # Turn off button
+# a = NotificationControlA()
+# a.turn_on()         # Turn on
+# a.turn_off()        # Turn off
+#
+# setter = NotificationSetting(a)
+# setter.set()        # can either turn on or turn off
+# setter.set()
 
-setter = NotificationSetting(a)
-setter.set()        # Single button
-setter.set()
 
-
-setting = NotificationSetting(a)
-setting.set()   # ON
-setting.set()   # OFF
-setting.set()   # ON
+# setting = NotificationSetting(a)
+# setting.set()   # ON
+# setting.set()   # OFF
+# setting.set()   # ON

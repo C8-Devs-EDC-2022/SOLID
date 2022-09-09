@@ -37,6 +37,17 @@ class Email(Subscribers, Uploader):
         return "Success"
 
 
+class Telegram(Subscribers, Uploader):
+    def subscribed(self):
+        return TELEGRAM_SUBSCRIBERS
+
+    def upload(self, filename):
+        print(f"Save to {filename}")
+        with open(filename, 'w') as f:
+            f.write(str(Telegram().subscribed()))
+        return "Success"
+
+
 SMS_SUBSCRIBERS = {1: '0917000000', 2: '09170000001'}
 EMAIL_SUBSCRIBERS = {1: 'aa@a.com', 2: 'bb@b.com'}
 TELEGRAM_SUBSCRIBERS = {1: 'aaa', 2: 'bbb'}

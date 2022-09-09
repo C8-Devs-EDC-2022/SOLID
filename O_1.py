@@ -17,6 +17,8 @@ class StorageSubscribers:
             print(SMS_SUBSCRIBERS)
         elif self.subscribe == 'email':
             print(EMAIL_SUBSCRIBERS)
+        elif self.subscribe == 'viber':
+            print("Pass")
         return self.subscribe
 
     def upload(self, filename):
