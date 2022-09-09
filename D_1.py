@@ -68,6 +68,7 @@ setter.set()        # Single button
 setter.set()
 
 
-# setting = NotificationSetting(a)
-# setting.set()   # ON
-# setting.set()   # OFF
+setting = NotificationSetting(a)
+setting.set()   # ON
+setting.set()   # OFF
+setting.set()   # ON
